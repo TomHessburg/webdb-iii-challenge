@@ -2,10 +2,11 @@ const express = require('express');
 const server = express();
 
 const cohorts = require('./routers/cohorts-router');
+const students = require('./routers/students-router');
 
 server.use(express.json());
 server.use('/api/cohorts', cohorts);
-
+server.use('/api/students', students);
 
 
 
