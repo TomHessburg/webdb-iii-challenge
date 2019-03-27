@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
     tbl.integer('cohort_id') 
         .unsigned()
         .references('id')
-        .inTable('roles')
+        .inTable('cohorts')
         .onDelete('CASCADE')
         .onUpdate('CASCADE')
   })
